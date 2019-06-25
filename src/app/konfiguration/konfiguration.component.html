@@ -1,0 +1,55 @@
+<div id="Konfiguration">
+    <table class="Konfiguration">
+        <tr>
+            <td>
+                Kleine Schiffe:
+            </td>
+            <td>
+                <select [(ngModel)]="konfiguration.anzahlSchiffeKlein">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td>
+                <img src="SchiffKlein.png" alt="Kleines Schiff" height="50">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mittlere Schiffe:
+            </td>
+            <td>
+                <select [(ngModel)]="konfiguration.anzahlSchiffeMittel">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td>
+                <img src="SchiffMittel.png" alt="Mittleres Schiff" height="50">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Große Schiffe:
+            </td>
+            <td>
+                <select [(ngModel)]="konfiguration.anzahlSchiffeGross">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td>
+                <img src="SchiffGroß.png" alt="Großes Schiff" height="50">
+            </td>
+        </tr>
+    </table>
+</div>

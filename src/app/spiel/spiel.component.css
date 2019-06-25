@@ -1,0 +1,146 @@
+Blider {
+    Striche1: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Bild1.png);
+    Striche2: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Bild2.png);
+    Striche3: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Bild3.png);
+    Striche4: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Bild4.png);
+    Striche5: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Bild5.png);
+    Schiff1: url(C:\Users\leo-e\schiffe-versenken\src\app\images\SchiffKlein.png);
+    Schiff2: url(C:\Users\leo-e\schiffe-versenken\src\app\images\SchiffMittel.png);
+    Schiff3: url(C:\Users\leo-e\schiffe-versenken\src\app\images\SchiffGroß.png);
+    Pirat1: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Pirat1.png);
+    Pirat2: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Pirat2.png);
+    Pirat3: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Pirat3.png);
+    Pirat4: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Pirat4.png);
+}
+
+#Inhalt{
+    text-align: center;
+    margin: 6px;
+    padding: 0;
+}
+
+#Konfiguration {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 6px;
+    padding: 6px;
+}
+
+#Spiel {
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+    margin: 6px;
+    padding: 6px;
+}
+#Rechts {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 6px;
+    padding: 6px;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    border: 2px, black;
+}
+
+
+.aktion {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.aktion:hover {
+    background-color: #cfd8dc;
+}
+
+.aktion:active {
+    color: #039be5;
+}
+
+
+.Koordinatensystem {
+    border: solid;
+    border-collapse: collapse;
+    border-color: black;
+    background-image: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Meer1.jpg);
+
+    margin:auto;
+
+
+}
+
+.Koordinatensystem th, td {
+    border: 1px, solid;
+}
+
+.buttonNeutral:hover {
+    opacity: 0.25;
+}
+
+.buttonNeutral {
+    background-color: lightblue;
+    opacity: 0.5;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.buttonRot {
+    background-color: red;
+    opacity: 0.5;
+    pointer-events: none;
+    padding: 20px;
+}
+
+.buttonVorbei {
+    background-color: gray;
+    opacity: 0.5;
+    pointer-events: none;
+    padding: 20px;
+}
+
+.buttonSchiff {
+    background-color: blue;
+    opacity: 0.5;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.buttonVersenkt {
+    background-color: green;
+    opacity: 0.5;
+    pointer-events: none;
+    padding: 20px;
+}
+
+.buttonSpielVorbei {
+    background-color: lightblue;
+    opacity: 0.25;
+    pointer-events: none;
+    padding: 20px;
+}
+
+.Konfiguration {
+    float: right;
+    margin: auto;
+}
+
+#Striche {
+    float: left;
+}

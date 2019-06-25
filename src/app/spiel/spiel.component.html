@@ -1,0 +1,36 @@
+<h2>Koordinatensystem</h2>
+<br>
+<button class="aktion" (click)="starteSpiel(this.konfiguration.anzahlSchiffeKlein, this.konfiguration.anzahlSchiffeMittel, this.konfiguration.anzahlSchiffeGross)">Neues Spiel</button>
+<button class="aktion" (click)="zeigErgebnis()">Zeig Schiffe</button><br><br>
+<div id="Inhalt">
+
+    <div id="Konfiguration">
+        <app-konfiguration></app-konfiguration>
+        {{warnung}}
+    </div>
+
+    <div id="Spiel" width="200px">
+        <table class="Koordinatensystem">
+            <tr *ngFor="let x_koordinate of x_koordinaten">
+                <td *ngFor="let y_koordinate of y_koordinaten">
+
+                    {{getFarbe(x_koordinate.id, y_koordinate.id)}}
+                    <div class="koordinate">
+                        <button class="{{farbeButton}}" (click)="schuss(x_koordinate.id, y_koordinate.id)"></button>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div id="Striche">
+            <ng-container *ngFor="let i of [].constructor(versucheDurchFuenf)"><img src="Bild5.png" alt="🐱" height="42">&nbsp;</ng-container>
+            <img src="Bild{{striche}}.png" alt="" height="42">
+        </div>
+    </div>
+
+    <div id="Rechts">
+        <app-rechts></app-rechts>
+    </div>
+
+</div>

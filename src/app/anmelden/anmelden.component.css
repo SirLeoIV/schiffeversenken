@@ -1,0 +1,51 @@
+Einfügen {
+    Pirat1: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Pirat1.png);
+    Pirat2: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Pirat2.png);
+    Pirat3: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Pirat3.png);
+    Pirat4: url(C:\Users\leo-e\schiffe-versenken\src\app\images\Pirat4.png);
+}
+
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+nav a:visited, a:link {
+    color: #607d8b;
+}
+
+nav a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+}
+
+nav a.active {
+    color: #039be5;
+}
+
+button {
+    padding: 2px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+    opacity: 0.75;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}
+
+button:active {
+    color: #039be5;
+}
+
+#Avatar {
+    display: inline-block;
+}

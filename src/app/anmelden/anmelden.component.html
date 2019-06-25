@@ -1,0 +1,39 @@
+<br>
+<div>
+    Titel:
+    <select [(ngModel)]="spielerNeu.titel">
+        <option>Mr.</option>
+        <option>Mrs.</option>
+        <option>Sir</option>
+        <option>Captain</option>
+    </select>&nbsp;
+
+    <label>Name:
+        <input [(ngModel)]="spielerNeu.name" placeholder="Name">
+    </label>&nbsp;
+
+    <button (click)="anmelden(this.spielerNeu.titel, this.spielerNeu.name, this.spielerNeu.avatar)">submit</button>
+
+</div>
+<br><br>
+
+<div>
+
+    <div id="Avatar">
+        <img src="Pirat1.png" width="100px"><br>
+        <input [(ngModel)]="spielerNeu.avatar" type="radio" name="pirat" value="Pirat1">
+    </div>
+    <div id="Avatar">
+        <img src="Pirat2.png" width="100px"><br>
+        <input [(ngModel)]="spielerNeu.avatar" type="radio" name="pirat" value="Pirat2">
+    </div>
+    <div id="Avatar">
+        <img src="Pirat3.png" width="100px"><br>
+        <input [(ngModel)]="spielerNeu.avatar" type="radio" name="pirat" value="Pirat3">
+    </div>
+    <div id="Avatar">
+        <img src="Pirat4.png" width="100px"><br>
+        <input [(ngModel)]="spielerNeu.avatar" type="radio" name="pirat" value="Pirat4">
+    </div>
+
+</div>
